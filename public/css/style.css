@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root{ --light-blue: #24a1d7; --dark-gray: #555555}
+
+body {font-size: 16px;font-family: Georgia, 'Times New Roman', Times, serif;}
+
+h1 { font-size: 5rem; color: rgb(0, 0, 0); text-align: center; margin: 1rem 0; }
+h3 { font-size: 2rem; color: rgb(255, 255, 255);}
+h5 { font-size: 1rem;}
+p { font-size: 2rem; text-align: center;}
+.razmak { height: 10rem; }
+
+/* ----------------------- Navigation section ------------------ */
+.navbar{ background-color: var(--light-blue); top: 3rem; position: fixed; width: 100%; z-index: 2;}
+.navbar a { float: left; display: block; color: #f2f2f2; font-size: 1rem; text-align: center; padding: 1rem 1.5rem; text-decoration: none; }
+.navbar a:hover { color: #000000; }
+.navbar .active { color: #000000; }
+.header { display: flex; top: 0; width: 100%; height: 3rem; background-color: var(--dark-gray); position: fixed; justify-content: center; z-index: 2;}
+.fsl-logo { display: flex; height: 2.5rem; width: auto; align-items: center;} 
+/*-------------------------------------------------------------- */
+
+/* ----------------------- About section ----------------------- */
+.about { display: flex; flex-direction: column; width: 100%; margin: auto; }
+.row-left ,
+.row-right { display: flex; flex-direction: row; background-color: #ffffff; width: 100%; }
+.row-right { background-color: #b8b8b8; }
+.row-50-img, 
+.row-50-txt { display: flex; width: 50%; }
+.row-50-txt { flex-direction: column; justify-content: center; padding:1.5rem; }
+.row-50-img { padding: 2rem; justify-content: center; }
+/*.img-wrap { background-color: white; border-radius: .5rem; border: 2px solid #757575; padding: 20px; flex: 1; display: flex; justify-content: center; }*/
+.img-wrap { border-radius: .5rem; padding: 20px; flex: 1; display: flex; justify-content: center; }
+.about .row-50-img .img-wrap .pict { width: 75%; height: auto; box-shadow: 0 0 40px rgba(0, 0, 0, 0.6); border-radius: .5rem;}
+/*-------------------------------------------------------------- */
+
+/*--------------------- News Section ----------------------------*/
+
+main {max-width: 80%;margin: 20px auto;padding: 0 20px;}
+.row {display: flex;flex-wrap: wrap;justify-content: space-between;margin-bottom: 20px;}
+.column {width: calc(33.33% - 10px); /* 3 columns with 5px gutter */}
+.news-item {position: relative;overflow: hidden;z-index: 0;}
+.news-item img {width: 100%;height: auto;border-radius: 5px;transition: transform 0.3s ease;}
+.news-item:hover img {transform: scale(1.2);}
+.overlay {position: absolute;bottom: 0;left: 0;right: 0;background-color: rgba(0, 0, 0, 0.7);padding: 10px;color: #fff;transition: 0.3s;opacity: 0; }
+.news-item:hover .overlay { opacity: 1; }
+.overlay h3 { margin-bottom: 5px; }
+.overlay a { color: #007bff; text-decoration: none; }
+.overlay a:hover { text-decoration: underline; }
+
+.news-article { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+.news-article article { background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); }
+.news-article article h6 { font-size: 2rem; margin-bottom: 20px; }
+.news-article article img { max-width: 100%; height: auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); border-radius: .5rem; margin-bottom: 20px; }
+.news-article article p {font-size: 1.2rem; margin-bottom: 20px; }
+
+/*--------------------------------------------------*/
+
+/*------------------- Clubs section-----------------*/
+
+.container-teams {margin-top: 35px;margin-bottom: 35px;padding-top: 35px;padding-left: 5px;padding-right: 5px;padding-bottom: 35px;margin-right: 95px;margin-left: 95px;max-width: 1200px;margin-left: auto;margin-right: auto;border-top: 5px solid #333;border-bottom: 5px solid #333;}
+.block-grid {display: grid;grid-gap: 50px;grid-template-columns: repeat(4, 1fr);}
+.box-square {background-color: white;border: 1px solid lightgray;position: relative;padding-bottom: 100%;transition: background-color 1.5s ease;}
+.box-square .content {position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 80%;height: fit-content;margin: auto;text-align: center;}
+.box-square .content .logo-align-content {width: 100%;height: auto;margin: auto auto 0px;align-content: center;}
+.content .logo-align-content img {vertical-align: middle;width: 80%;height: auto;transition: transform 1s ease;}
+.box-square:hover { background-color: #54b8e3;cursor: pointer;
+    .content .logo-align-content img {transform: scale(1.2);} }
+.clubs-title-box { width: 100%; }
+.club-title { width: 1200px; color: #000000; margin: 0 auto auto auto;}
+
+
+.club-info-container { display: flex; flex-direction: row; align-items: flex-start;  height: 460px; background-color: #06397a; border-top: 120px solid var(--light-blue); border-bottom: 60px solid var(--light-blue); }
+.club-logo { display: flex; flex-direction: row; align-items: center; margin: 50px 0px 0px 10px;}
+.club-name { display: flex; flex-direction: row; align-items: center; color: #fff; }
+
+.player-info-container { display: flex; flex-direction: row; align-items: flex-start; justify-content: space-evenly; height: 460px; background-color: #06397a; border-top: 120px solid var(--light-blue); border-bottom: 60px solid var(--light-blue); }
+.player-logo { display: flex; flex-direction: row; margin: 0px 0px 0px 10px;}
+.player-logo img { display: flex; width: 200px; height: auto; align-items: flex-end;}
+.about-player { height: 500px; text-align: center; }
+
+/* -----------------------------Players section -----------------------------------*/
+
+.container-players {width: 80%;height: 90%;margin: 0px auto auto auto;z-index: 1;}
+.title-with-border {margin: 0px 0px 0px 0px;border-bottom: 5px solid var(--dark-gray);}
+.players-title {color: var(--dark-gray);margin-bottom: 5px;}
+.grid-container {width: 100%;row-gap: 60px;display: grid;grid-template-columns: repeat(5, 1fr);padding-bottom: 25px;border-bottom: 5px solid #323b42;padding-top: 35px;padding-bottom: 35px;}
+.grid-item {position: relative;margin: auto;width: 80%;height: 100%;border: 0px solid rgb(73, 73, 73);border-top-left-radius: 20px;border-top-right-radius: 20px;background-color: #cacaca;}
+.grid-item img {display: block;width: 100%;height: 100%;transition: 0.5s;}
+.grid-item img:hover {transform: scale(1.1);}
+.grid-item:hover { background-color: var(--light-blue);
+    .name {background-color: var(--light-blue);} }
+.name {position: absolute;bottom: -18px;background: #323b42;color: #ffffff;width: 100%;transition: .5s ease;opacity: 1;font-size: 20px;padding: 20px;text-align: center;border: 0px solid rgb(73, 73, 73);border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
+.name h1 {font-size: 20px;}
+
+/* -----------------------------------------------------------------------------------*/
+
+
+/* -------------------------------Stats Section ----------------------------------- */
+
+.stat-tables { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; width: 90%; margin: auto;} 
+.stat-tables iframe { width: 40%; height: 950px; margin: 20px 60px 20px 60px;}
+.table-title-border {width: 100%;margin: 0px 0px 0px 0px;border-bottom: 5px solid var(--dark-gray);}
+table {background-color: rgb(233, 233, 233);width: 80%;height: 100%;margin: 20px;text-align: left;}
+table, th, td, tr { border: 0.5px solid rgb(223, 223, 223);border-collapse: collapse;height: 50px;}
+th {background-color: var(--light-blue);color: white;height: 50px;}
+td {height: 60px;}
+.position {width: 60px;}
+.text-box {display: flex;float: left;height: 100%;padding-left: 20px;}
+.text {font-size: 20px;align-content: center;}
+.image-box {display: flex;flex-direction: column;justify-content: center;align-items: center;height: 100%;width: 100px;float: left;}
+.image-box img {align-content: center;width: 40px;}
+.tab {width: 80px;text-align: center;}
+tr:hover {border: 1px solid rgb(0, 0, 0);background-color: var(--light-blue);}
+.table-titles { display: flex; flex-direction: row; justify-content: center; align-items: center;  width: 90%; margin: auto;}
+.table-title {width: 80%; margin: auto; color: #000000; flex-direction: row; padding-left: 25px; border-bottom: 5px solid var(--dark-gray);}
+
+/*------------------------------------------------------------------------------------ */
+
+
+
+/* ----------------------- Footer section ---------------------- */
+.footer { display: flex; height: 20rem; width: 100%; left: 0; bottom: 0; background-color: var(--light-blue); justify-content: center; align-items: center;}
+.footer h2 { color: #f2f2f2; font-size: 5rem; display: flex;}
+
+footer {background-color: #333; color: #fff; padding: 0px 0; position: relative;}
+.container { display: flex; flex-direction: column; align-items: center;}
+.top-section { background-color: var(--light-blue); /* Light blue background */ width: 100%; display: flex; justify-content: space-around; padding: 10px 0; margin-bottom: 20px;}
+.sponsor { margin: 0 10px; height: 100px; }
+.sponsor img { height: 80px; margin: auto; }
+.sponsor img:hover { height: 100px; }
+.bottom-section { display: flex; justify-content: center; align-items: center; text-align: center; height: 200px; }
+.logo { position: absolute; bottom: 10px; left: 10px; width: 50px; height: auto; }
+/*-------------------------------------------------------------- */

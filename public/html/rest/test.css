@@ -1,0 +1,97 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    border: 5px solid black;
+    background-color: #87b68e;
+    margin: auto;
+}
+
+
+.item{
+    text-align: center;  
+    border-radius: 5px;
+    border: 5px solid black;
+    background-color: rgb(37, 99, 138);
+} 
+ 
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+
+.item {
+
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+
+/*-------------------------------------------------------*/
+
+.container-teams {
+    margin-top: 70px;
+    padding-right: 95px;
+    padding-left: 95px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box-square {
+    background-color: white;
+    border: 1px solid lightgray;
+    position: relative;
+    padding-bottom: 100%;
+    transition: all 0.2 ease;
+}
+
+.box-square .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.box-square .content .logo-align-content {
+    width: 100%;
+    height: auto;
+    margin: auto auto 0px;
+    align-content: center;
+   
+}
+
+
+.box-square .content .logo-align-content img {
+    vertical-align: middle;
+    width: 80%;
+    height: auto;
+}
+
+.box-square:hover {
+    .box-square .content .logo-align-content img {
+        width: 100%;
+    }
+}

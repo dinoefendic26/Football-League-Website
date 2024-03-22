@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .tab-btn.active {
+    background-color: #45a049;
+  }
+  
+  .fixtures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .fixture {
+    width: calc(25% - 20px);
+    margin: 0 10px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .team {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .team img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .vs {
+    flex: 0 0 auto;
+    margin: 0 20px;
+    font-size: 24px;
+  }
+  
