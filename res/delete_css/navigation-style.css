@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: #2141c0;*/
+    background-color: #202020;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+.nav-sides {
+    /*background-color: #376deb;*/
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.container-main {
+    background-color:#141724;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.container-center {
+    /*background-color: #1d2033;*/
+    /*background-color: #2b2a2a;*/
+    /*border: 1px solid #4b4b4b;*/
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+
+    background-color:#1d2033;
+}
+
+.navbar {
+    background: #000000;
+    /*background-color: #376deb;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;    
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 8.5px 20px;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar a.active {
+    background-color: #ffffff;
+    color: #000000;
+    /*
+    border-bottom: 6px solid #000000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;*/
+}
+
+/*.underline {
+    display: block;
+    border-bottom: 6px solid #000000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}*/
+
+.container-clubs {
+    /*background-color: #2b2a2a;*/
+    /*background-color: #1d2033;*/
+    width: 80%;
+    height: 90%;
+    margin: 0px auto auto auto;
+}
+
+.title-with-border {
+    height: 6%;
+    margin: 0px 40px 0px 40px;
+    /*border-bottom: 2px solid #ffffff;*/
+    border-bottom: 2px solid #ffffff
+}
+
+.teams-title {
+    font-size: 35px;
+    /*color: #ffffff;*/
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.grid-container {
+    width: 100%;
+    height: 90%;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    /*background-color: #94a14b;*/
+    /*background-color: #2b2a2a;*/
+    /*background-color: #1d2033;*/
+    
+}
+
+.grid-item {
+    /*background-color: #474747;*/
+    /*background-color: #1b1b1b;*/
+    position: relative;
+    margin: auto;
+    height: 180px;
+    width: 180px;
+    border: 1px solid rgb(134, 134, 134);
+    border-radius: 10px;
+
+    background: #141724;
+}
+
+.content {
+    /*background-color: #bdd714;*/
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.logo {
+    /*background-color: #de0d0d;*/
+    /*background-color: #1b1b1b;*/
+    height: 120px;
+    transition: all 2s ease;
+    background: #141724;
+}
+
+img {
+    /*background-color: #2141c0;*/
+    /*background-color: #1b1b1b;*/
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.content:hover {
+    height: 180px;
+    .team-name {
+        font-size: 20px;
+    }
+    img {
+        width: 120px;
+        height: 120px;
+    }
+    .logo {
+        border-radius: 10px;
+    }
+    
+}
+
+.grid-item:hover {
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.team-name {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 0px;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+/* About page */
+
+.container-about {
+    /*background-color: #2b2a2a;*/
+    /*background-color: #1d2033;*/
+    width: 100%;
+    height: 90%;
+    margin: 0px auto auto auto;
+}
+
+.first-section {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.fs-image {
+    /*border: 1px solid red;*/
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.image-about-01 {
+    margin-left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.fs-text {
+    /*border: 1px solid yellow;*/
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.text-about-01 {
+    
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    color: white;
+    font-family:'Franklin Gothic Medium';
+    font-size: 60px;
+    text-align: center;
+
+    /*border: 1px solid red;*/
+}
+
+.text-about-02 {
+    width: 80%;
+    margin: 0;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family:'Franklin Gothic Medium';
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/*Players stylesheet*/
+
+

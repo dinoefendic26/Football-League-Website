@@ -1,0 +1,13 @@
+
+.club-info-tab {
+    background-color: #0781cd;
+    width: 100%;
+    height: 300px;
+}
+
+.club-info-tab img {
+    padding-left: 50px;
+    padding-top: 80px;
+    width: 250px;
+    height: auto;
+}
